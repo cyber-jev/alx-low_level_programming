@@ -3,6 +3,7 @@
 /**
  * main - main block
  * Description: print out the alphabets
+ * Retrun: 0
  */
 int main(void)
 {
