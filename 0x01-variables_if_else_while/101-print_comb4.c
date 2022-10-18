@@ -42,12 +42,12 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				c++;	
+				c++;
 			}
 			d++;
 		}
 		e++;
 	}
 	putchar('\n');
-	return (0);	
+	return (0);
 }
