@@ -11,18 +11,24 @@ int main(void)
 	{
 		for (j = i; j <= 99; j++)
 		{
-			putchar(i / 10 + 48);
-			putchar(i % 10 + 48);
-			putchar(' ');
-			putchar(j / 10 + 48);
-			putchar(j % 10 + 48);
-
-			if (i * 100 + j != 9899)
+			if (j != i)
 			{
-				putchar(',')
+				putchar(i / 10 + 48);
+				putchar(i % 10 + 48);
+				putchar(' ');
+				putchar(j / 10 + 48);
+				putchar(j % 10 + 48);
+
+				if (i * 100 + j != 9899)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 
 			}
 		}
 	}
+	putchar('\n');
+	return (0);
 }
 
