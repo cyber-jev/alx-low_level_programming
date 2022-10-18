@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -17,7 +16,7 @@
  * All your code should be in the main function
  * Return: 0
  */
- int main(void)
+int main(void)
 {
 	int c;
 	int d;
