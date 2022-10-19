@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	char abe[] = "_putchar"
+	char abe[] = "_putchar";
 
 	int c;
 
