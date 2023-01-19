@@ -2,18 +2,19 @@
 #include <stdlib.h>
 /**
  * main - main block
- * Description: print out the alphabets
- * Retrun: 0
+ * Description: Get a random number and check its last digit, compare it with 5
+ * Return: 0
  */
 int main(void)
 {
-	char alp = 'a';
+	char c = 'a';
 
-	while (alp <= 'z')
+	while (c <= 'z')
 	{
-		putchar(alp);
-		alp++;
+		putchar(c);
+		c++;
 	}
+
 	putchar('\n');
 	return (0);
 }

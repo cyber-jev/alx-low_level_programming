@@ -1,1 +1,1 @@
-arguement ventor and argument count
+**0x0A. C - argc, argv**

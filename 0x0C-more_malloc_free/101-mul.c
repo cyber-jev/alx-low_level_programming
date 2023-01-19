@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-/*
+/**
  * _is_zero - determines if any number is zero
  * @argv: argument vector.
  *
@@ -34,7 +34,7 @@ void _is_zero(char *argv[])
 	}
 }
 
-/*
+/**
  * _initialize_array - set memery to zero in a new array
  * @ar: char array.
  * @lar: length of the char array.
@@ -51,7 +51,7 @@ char *_initialize_array(char *ar, int lar)
 	return (ar);
 }
 
-/*
+/**
  * _checknum - determines length of the number
  * and checks if number is in base 10.
  * @argv: arguments vector.
@@ -73,7 +73,7 @@ int _checknum(char *argv[], int n)
 	return (ln);
 }
 
-/*
+/**
  * main - Entry point.
  * program that multiplies two positive numbers.
  * @argc: number of arguments.
@@ -115,12 +115,11 @@ int main(int argc, char *argv[])
 			free(nout), nout = malloc(lnout + 1), nout = _initialize_array(nout, lnout);
 			k = lnout - 1, i = ln1 - 1, j = ln2 - 1, ca = addl = 0;
 		}
-																			if (j >= 0)	
-																			{
-																				add = ((argv[1][i] - '0') * (argv[2][j] - '0')) + (nout[k] - '0') + addl;
-													
-																				addl = add / 10, nout[k] = (add % 10) + '0';
-																			}
+		if (j >= 0)
+		{
+			add = ((argv[1][i] - '0') * (argv[2][j] - '0')) + (nout[k] - '0') + addl;
+			addl = add / 10, nout[k] = (add % 10) + '0';
+		}
 	}
 	printf("%s\n", nout);
 	return (0);

@@ -1,9 +1,9 @@
 #include "dog.h"
 #include <stdlib.h>
 
-/*
+/**
  * free_dog - frees dogs.
- * @d: struct dog. 
+ * @d: struct dog.
  *
  * Return: no return.
  */
